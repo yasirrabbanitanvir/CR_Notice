@@ -21,6 +21,13 @@
             border-bottom: 1px solid #999;
         }
 
+        .pic {
+            float: right;
+            width: 150px;
+            height: auto;
+            margin: -20px 0 0 0;
+        }
+
         .r1 {
             text-align: center;
             padding: 20px;
@@ -35,12 +42,14 @@
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            table-layout: auto;
         }
 
         .r3 th, .r3 td {
             border: 1px solid #333;
             text-align: center;
             padding: 12px;
+            word-wrap: break-word; 
         }
 
         .r3 th {
@@ -58,15 +67,41 @@
             color: black;
         }
 
-        /*Making Responsive */
+        .signature {
+            text-align: right;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        /* Making Responsive */
         @media (max-width: 768px) {
             h1 {
                 font-size: 36px;
             }
 
+            .r1 h3 {
+                font-size: 22px;
+            }
+
             table, .r3 th, .r3 td {
                 font-size: 14px;
                 padding: 8px;
+            }
+
+            .r3 td:first-child {
+                white-space: nowrap;
+            }
+
+            .signature {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 14px;
+            }
+
+            .pic {
+                width: 100px;
+                margin: 10px auto;
+                float: none;
             }
         }
 
@@ -76,35 +111,33 @@
             }
 
             .r1 h3 {
-                font-size: 20px;
+                font-size: 18px;
             }
 
             table, .r3 th, .r3 td {
                 font-size: 12px;
                 padding: 6px;
             }
-        }
 
-        .signature {
-            text-align: right;
-            padding: 20px;
-            font-size: 16px;
-        }
+            .r3 td:first-child {
+                white-space: normal; 
+                word-break: break-word; 
+            }
 
-        @media (max-width: 768px) {
             .signature {
-                text-align: center;
-                margin-top: 20px;
-                font-size: 14px;
+                font-size: 12px;
             }
         }
-
     </style>
 </head>
 <body>
 
+    <div>
+        <img class="pic" src="BUBT.png" alt="BUBT">
+    </div>
+
     <div class="r1">
-        <h1>Upcoming Exam</h1>
+        <h1>Upcoming Exams</h1>
         <h3>Intake 48/03</h3>
     </div>
 
