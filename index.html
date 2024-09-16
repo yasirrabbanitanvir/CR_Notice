@@ -4,122 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CR-48/03</title>
-</head>
-<body>
-
     <style>
-
-        .r1{
-
-            text-align: center;
-            line-height: 50%;
-
-
+        body {
+            font: 16px "Lao UI", Sans-Serif;
+            line-height: 24px;
+            margin: 0;
+            padding: 0;
         }
 
-
-        .r3{
-
-            text-align: center;
-
-        }
-
-        .r3 th, .r3 td {
-
-            border: 1px solid;
-            text-align: center;
-
-
-        }
-
-        table{
-
-            border-collapse: collapse;
-
-        }
-
-        h1{
-
+        h1 {
             margin: 0 0 16px 0;
-            padding: 0 0 16px 0 ;
+            padding: 0 0 16px 0;
             font-size: 42px;
             font-weight: bold;
             letter-spacing: -2px;
             border-bottom: 1px solid #999;
         }
 
-        .color{
+        .r1 {
+            text-align: center;
+            padding: 20px;
+        }
 
+        .r1 h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .r3 th, .r3 td {
+            border: 1px solid #333;
+            text-align: center;
+            padding: 12px;
+        }
+
+        .r3 th {
+            background-color: #48b7d3;
+            color: white;
+        }
+
+        .color {
             background: #27ae60;
-
+            color: black;
         }
 
-        .color2{
-
+        .color2 {
             background: #f1c40f;
-
+            color: black;
         }
 
+        /*Making Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
 
+            table, .r3 th, .r3 td {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .r1 h3 {
+                font-size: 20px;
+            }
+
+            table, .r3 th, .r3 td {
+                font-size: 12px;
+                padding: 6px;
+            }
+        }
+
+        .signature {
+            text-align: right;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .signature {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
 
     </style>
-
+</head>
+<body>
 
     <div class="r1">
         <h1>Upcoming Exam</h1>
         <h3>Intake 48/03</h3>
     </div>
 
-
-    <table width = 100% class="r3" >
-
-        <tr style="background-color: #48b7d3">
+    <table class="r3">
+        <tr>
             <th>Date</th>
             <th>Exam</th>
             <th>Topic</th>
         </tr>
-
         <tr class="color">
-            <th>18-09-2024</th>
-            <th>Computer Graphics Lab MID</th>
-            <th>11 তারিখ পর্যন্ত ল্যাবে যা যা করাইবে সে পর্যন্ত</th>
-          
-        </tr>
-        
-        <tr>
-            <th>19-09-2024</th>
-            <th>Last Date of CG Assignment Submission</th>
-            <th><a href="https://classroom.google.com/c/NjkxMzM3MzYyMTgw/p/NzA2MTI2MjUzMDg4/details">Clsroom Link</a></th>
-          
+            <td>18-09-2024</td>
+            <td>Computer Graphics Lab MID</td>
+            <td>11 তারিখ পর্যন্ত ল্যাবে যা যা করাইবে সে পর্যন্ত</td>
         </tr>
         <tr>
-            <th>19-09-2024</th>
-            <th>Web Database CT-01</th>
-            <th>HTML & CSS</th>
-          
+            <td>19-09-2024</td>
+            <td>Last Date of CG Assignment Submission</td>
+            <td><a href="https://classroom.google.com/c/NjkxMzM3MzYyMTgw/p/NzA2MTI2MjUzMDg4/details">Classroom Link</a></td>
         </tr>
-
-        <tr class="color2">
-            <th>23-09-2024</th>
-            <th>Web Database Lab MID</th>
-            <th>Scenario Design</th>
-          
+        <tr>
+            <td>19-09-2024</td>
+            <td>Web Database CT-01</td>
+            <td>HTML & CSS</td>
         </tr>
-
         <tr class="color2">
-            <th>23-09-2024</th>
-            <th>Data Mining CT-01</th>
-            <th>1. Apriori Algorithm <br>
+            <td>23-09-2024</td>
+            <td>Web Database Lab MID</td>
+            <td>Scenario Design</td>
+        </tr>
+        <tr class="color2">
+            <td>23-09-2024</td>
+            <td>Data Mining CT-01</td>
+            <td>
+                1. Apriori Algorithm <br>
                 2. FP growth Algorithm <br>
-                3. Correlation Analysis </th>
-          
+                3. Correlation Analysis
+            </td>
         </tr>
-
-
     </table>
 
-    <p style="margin-left: 75%; padding: 10px;">Yasir Rabbani Tanvir <strong>CR</strong></p>
+    <div class="signature">
+        Yasir Rabbani Tanvir <strong>CR</strong>
+    </div>
 
-    
 </body>
 </html>
